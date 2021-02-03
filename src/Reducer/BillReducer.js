@@ -19,7 +19,6 @@ const BillReducer = (state, {type, bills, bill, id, participant, unitCount}) => 
                 }
                 return bill
             })
-
         case "DEL_PARTICIPANT_FROM_BILL":
             return state.map((bill) => {
                 if (bill.id === id){

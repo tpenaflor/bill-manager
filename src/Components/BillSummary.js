@@ -7,7 +7,8 @@ const BillSummary = () => {
   const {participants, bills} = useContext(BillsManagerContext)
 
   return (
-    <div>
+    <div className="entry">
+      <div> </div>
       {participants.map((part)=> (
         <div key={part.id}>
           <p>{`${part.name} total bill ${participantBillSummary(part.id, bills)}`}</p>

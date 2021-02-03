@@ -4,9 +4,7 @@ import BillsManagerContext from '../Context/BillsManagerContext'
 
 const BillList = () => {
     const {bills} = useContext(BillsManagerContext)
-    return bills.map((bill) => <Bill 
-        className="billEntry" 
-        key={bill.id} bill={bill}/> 
+    return bills.map((bill) => <Bill key={bill.id} bill={bill}/> 
         )
 }
 
