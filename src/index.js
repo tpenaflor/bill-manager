@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom';
 import BillManagerApp from './Components/BillManagerApp';
 import reportWebVitals from './reportWebVitals';
 
-import './styles/styles.scss'
+// import './styles/styles.scss'
 
 ReactDOM.render(
   <React.StrictMode>
