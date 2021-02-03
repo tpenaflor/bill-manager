@@ -1,0 +1,18 @@
+
+// colors
+$darkGreen : #183318;
+$lightGreen : lighten($darkGreen,20%);
+$lighterGreen : lighten($lightGreen,5%);
+
+$bodyBack : white;
+$brightGreen : #42bb42;
+
+$darkGrey : #333333;
+$midGrey : #444444;
+
+// sizes
+$sSize : 1.2rem;
+$mSize : 1.6rem;
+$lSize : 3.2rem;
+$xlSize : 4.8rem;
+$desktopBreakPoint : 45rem;

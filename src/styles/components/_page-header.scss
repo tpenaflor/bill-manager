@@ -1,0 +1,13 @@
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: $sSize 0;
+}
+
+@media (min-width: $desktopBreakPoint) {
+    // .header {
+    //     margin-bottom: $xlSize;
+    //     padding: $mSize 0;
+    // }
+} 

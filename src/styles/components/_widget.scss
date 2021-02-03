@@ -1,0 +1,43 @@
+.widget {
+    background-color: $lighterGreen;
+    margin-bottom: $xlSize;
+}
+
+.widget-header {
+    background-color: $lightGreen;
+    color: $brightGreen;
+    padding: $mSize;
+    justify-content: space-between;
+    display: flex;
+}
+
+.widget__message {
+    color : $brightGreen;
+    text-align: center;
+    padding: $sSize;
+    border-bottom: 1px solid lighten($brightGreen, 10%);
+}
+
+.widget__entry {
+    padding: $sSize $sSize;
+    justify-content: space-between;
+    display: flex;
+    border-bottom: 1px solid lighten($brightGreen, 10%);
+}
+
+.widget__item {
+    color:white;
+    font-weight: 500;
+    font-size: 2rem;
+    word-break: break-all;
+}
+
+.widget-header__title {
+    margin:0;
+}
+
+@media (min-width: $desktopBreakPoint) {
+    .widget__entry {
+        padding: $mSize $mSize;
+    }
+} 
