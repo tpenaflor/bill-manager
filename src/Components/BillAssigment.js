@@ -1,10 +1,10 @@
-import React, {useState, useContext} from 'react'
-import BillsManagerContext from '../Context/BillsManagerContext'
+import React, {useState} from 'react'
+import {useBillsManagerContext} from '../Context/BillsManagerContext'
 
 import {participantBill} from '../Selector/billSelector'
 
 const BillAssignment = ({part, bill}) => {
-    const {bills, billDispatch} = useContext(BillsManagerContext)
+    const {bills, billDispatch} = useBillsManagerContext()
     const [isActive, setActive] = useState(!!bill.allocation.participant.find(({id})=>id===part.id))
     const [unitCount, setUnitCount] = useState(bill.allocation.allocated)
 

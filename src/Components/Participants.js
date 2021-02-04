@@ -1,8 +1,8 @@
-import React, {useContext} from 'react'
-import BillsManagerContext from '../Context/BillsManagerContext'
+import React from 'react'
+import {useBillsManagerContext} from '../Context/BillsManagerContext'
 
 const Participants = () => {
-  const {participants, partDispatch} = useContext(BillsManagerContext)
+  const {participants, partDispatch} = useBillsManagerContext()
 
   const remParticipant = (id) => {
     partDispatch({type:"DEL_PARTICIPANT",id})

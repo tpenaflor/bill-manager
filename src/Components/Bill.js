@@ -1,11 +1,11 @@
-import React, {useContext} from 'react'
+import React from 'react'
 import SplitAssignment from './SplitAssignment'
-import BillsManagerContext from '../Context/BillsManagerContext'
+import {useBillsManagerContext} from '../Context/BillsManagerContext'
 
 import {totalBillAllocation} from '../Selector/billSelector'
 
 const Bill = ({bill}) => {
-    const {billDispatch} = useContext(BillsManagerContext)
+    const {billDispatch} = useBillsManagerContext()
 
     const removeBill = (id) => {
         billDispatch({type:"DEL_BILL", id})

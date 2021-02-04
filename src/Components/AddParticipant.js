@@ -1,10 +1,10 @@
 
-import React, {useState, useContext} from 'react'
-import BillsManagerContext from '../Context/BillsManagerContext'
+import React, {useState} from 'react'
+import {useBillsManagerContext} from '../Context/BillsManagerContext'
 import { v4 } from 'uuid';
 
 const AddParticipant = () => {
-    const {partDispatch} = useContext(BillsManagerContext)
+    const {partDispatch} = useBillsManagerContext()
     const [name, setName] = useState('')
 
     const addParticipant = (e) => {

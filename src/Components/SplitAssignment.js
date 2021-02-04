@@ -1,9 +1,9 @@
-import React, {useContext} from 'react'
+import React from 'react'
 import BillAssignment from './BillAssigment'
-import BillsManagerContext from '../Context/BillsManagerContext'
+import {useBillsManagerContext} from '../Context/BillsManagerContext'
 
 const SplitAssignment = ({bill}) => {
-    const {participants} = useContext(BillsManagerContext)
+    const {participants} = useBillsManagerContext()
     return participants.map((part) => (
         <BillAssignment key={part.id} part={part} bill={bill}/>
     ))

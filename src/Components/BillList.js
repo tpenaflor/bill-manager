@@ -1,9 +1,9 @@
-import React, {useContext} from 'react'
+import React from 'react'
 import Bill from './Bill'
-import BillsManagerContext from '../Context/BillsManagerContext'
+import {useBillsManagerContext} from '../Context/BillsManagerContext'
 
 const BillList = () => {
-    const {bills} = useContext(BillsManagerContext)
+    const {bills} = useBillsManagerContext()
     return bills.map((bill) => <Bill 
         className="billEntry" 
         key={bill.id} bill={bill}/> 

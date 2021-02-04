@@ -1,10 +1,10 @@
-import React, {useContext} from 'react'
-import BillsManagerContext from '../Context/BillsManagerContext'
+import React from 'react'
+import {useBillsManagerContext} from '../Context/BillsManagerContext'
 
 import {participantBillSummary} from '../Selector/billSelector'
 
 const BillSummary = () => {
-  const {participants, bills} = useContext(BillsManagerContext)
+  const {participants, bills} = useBillsManagerContext()
 
   return (
     <div>
