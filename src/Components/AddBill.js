@@ -1,9 +1,9 @@
-import React, {useState, useContext} from 'react'
-import BillsManagerContext from '../Context/BillsManagerContext'
+import React, {useState} from 'react'
+import {useBillsManagerContext} from '../Context/BillsManagerContext'
 import { v4 } from 'uuid';
 
 const AddBill = () => {
-    const {billDispatch} = useContext(BillsManagerContext)
+    const {billDispatch} = useBillsManagerContext()
     const [amount, setAmount] = useState('')
     const [unitCount, setUnitCount] = useState('')
     const [desc, setDesc] = useState('')

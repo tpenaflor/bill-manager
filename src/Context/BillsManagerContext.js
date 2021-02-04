@@ -1,5 +1,6 @@
-import React from 'react'
+import React, { useContext } from 'react'
 
-const BillsManagerContext = React.createContext()
+export const useBillsManagerContext = () => useContext(BillsManagerContext)
+const BillsManagerContext = React.createContext({})
 
 export default BillsManagerContext

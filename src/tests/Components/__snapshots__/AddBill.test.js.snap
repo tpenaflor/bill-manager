@@ -1,0 +1,84 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render add bill by unit 1`] = `
+<form
+  onSubmit={[Function]}
+>
+  <label>
+    Split Option
+  </label>
+  <select
+    id="splitOption"
+    onChange={[Function]}
+    value="unit"
+  >
+    <option
+      value="even"
+    >
+      Split Evenly
+    </option>
+    <option
+      value="unit"
+    >
+      Split per Unit
+    </option>
+  </select>
+  <input
+    onChange={[Function]}
+    placeholder="Bill Description"
+    value=""
+  />
+  <input
+    onChange={[Function]}
+    placeholder="Number of Units"
+    value="10"
+  />
+  <input
+    onChange={[Function]}
+    placeholder="Amount"
+    value=""
+  />
+  <button>
+    Add Bill
+  </button>
+</form>
+`;
+
+exports[`render add bill evenly 1`] = `
+<form
+  onSubmit={[Function]}
+>
+  <label>
+    Split Option
+  </label>
+  <select
+    id="splitOption"
+    onChange={[Function]}
+    value="even"
+  >
+    <option
+      value="even"
+    >
+      Split Evenly
+    </option>
+    <option
+      value="unit"
+    >
+      Split per Unit
+    </option>
+  </select>
+  <input
+    onChange={[Function]}
+    placeholder="Bill Description"
+    value=""
+  />
+  <input
+    onChange={[Function]}
+    placeholder="Amount"
+    value=""
+  />
+  <button>
+    Add Bill
+  </button>
+</form>
+`;

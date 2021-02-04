@@ -1,40 +1,37 @@
 import React, {useContext, useEffect, useState} from 'react'
-import NotesContext from '../Context/NotesContext'
+// import NotesContext from '../Context/NotesContext'
 
-const useMousePos = () => {
-  const [pos, setPos] = useState({x:0, y:0})
+// const useMousePos = () => {
+//   // const [pos, setPos] = useState({x:0, y:0})
 
 
-  useEffect(()=>
-  {
-    const handleMouseMove = (e) => setPos({x:e.pageX, y:e.pageY})
+//   // useEffect(()=>
+//   // {
+//   //   const handleMouseMove = (e) => setPos({x:e.pageX, y:e.pageY})
 
-    document.addEventListener('mousemove', handleMouseMove)
+//   //   document.addEventListener('mousemove', handleMouseMove)
 
-    return () => {
-      document.removeEventListener('mousemove', handleMouseMove)
-    }
+//   //   return () => {
+//   //     document.removeEventListener('mousemove', handleMouseMove)
+//   //   }
 
-  },[])
+//   // },[])
 
-  return pos
-}
+//   // return pos
+// }
 
-const Note = ({note}) => {
-  const {dispatch} = useContext(NotesContext)
+const Note = () => {
+  // const {dispatch} = useContext(NotesContext)
 
-  const pos = useMousePos()
+  // const pos = useMousePos()
 
-  const delNote = (title) => (
-    dispatch({type:"DEL_NOTE", title})
-  )
+  // const delNote = (title) => (
+  //   dispatch({type:"DEL_NOTE", title})
+  // )
 
   return (
     <div>
-        <h3>{note.title}</h3>
-        <p>{note.body}</p>
-        <p>{`${pos.x} : ${pos.y}`}</p>
-        <button onClick={()=> delNote(note.title)}> X </button>
+        <h1>Note</h1>
     </div>
   )
 }
