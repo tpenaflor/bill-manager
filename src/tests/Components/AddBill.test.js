@@ -25,6 +25,7 @@ afterEach(()=>{
 
 test('render add bill evenly', ()=> {
     wrapper.find('select').simulate('change', {target:{value: 'even'}})
+    expect(shallowToJson(wrapper)).toMatchSnapshot()
 
     const desc = "test description"
     const amount = "1000"
@@ -51,6 +52,7 @@ test('render add bill evenly', ()=> {
 
 test('render add bill by unit', ()=> {
     wrapper.find('select').simulate('change', {target:{value: 'unit'}})
+    expect(shallowToJson(wrapper)).toMatchSnapshot()
 
     const desc = "test description"
     const amount = "1000"

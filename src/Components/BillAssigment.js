@@ -1,7 +1,8 @@
 import React, {useState} from 'react'
 import {useBillsManagerContext} from '../Context/BillsManagerContext'
 
-import {participantBill} from '../Selector/billSelector'
+import {participantBill} from '../Selector/BillSelector'
+import {currency} from '../tools/formatter'
 
 const BillAssignment = ({part, bill}) => {
     const {bills, billDispatch} = useBillsManagerContext()
@@ -60,7 +61,7 @@ const BillAssignment = ({part, bill}) => {
                  </select>
             )}
             
-            <p>{`${part.name} ${bill.desc} ${participantBill(part.id, bill.id, bills)}`}</p> 
+            <p>{`${part.name} ${bill.desc} ${currency(participantBill(part.id, bill.id, bills))}`}</p> 
         </div>
     )
 }

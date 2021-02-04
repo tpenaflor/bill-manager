@@ -2,7 +2,7 @@ import React from 'react'
 import SplitAssignment from './SplitAssignment'
 import {useBillsManagerContext} from '../Context/BillsManagerContext'
 
-import {totalBillAllocation} from '../Selector/billSelector'
+import {totalBillUnitAllocation} from '../Selector/BillSelector'
 import {currency} from '../tools/formatter'
 
 const Bill = ({bill}) => {
@@ -17,11 +17,10 @@ const Bill = ({bill}) => {
             <div>
                 <button onClick={()=>removeBill(bill.id)}>x</button>
                 {bill.desc} 
-                {bill.splitOpt === 'unit' && ` (${totalBillAllocation(bill)}/${bill.allocation.unitCount})`}
+                {bill.splitOpt === 'unit' && ` (${totalBillUnitAllocation(bill)}/${bill.allocation.unitCount})`}
                 {` ${currency(bill.amount)}`}
             </div>
             <SplitAssignment bill={bill}/>
-            {console.log(bill.allocation)}
         </div> 
     )
 }

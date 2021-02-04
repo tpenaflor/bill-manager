@@ -1,7 +1,7 @@
 import React from 'react'
 import {useBillsManagerContext} from '../Context/BillsManagerContext'
 
-import {participantBillSummary} from '../Selector/billSelector'
+import {participantBillSummary} from '../Selector/BillSelector'
 
 const BillSummary = () => {
   const {participants, bills} = useBillsManagerContext()

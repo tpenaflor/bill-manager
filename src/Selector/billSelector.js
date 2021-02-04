@@ -18,7 +18,7 @@ export const participantBillSummary = (partId, bills) => {
     },0))
 }
 
-export const totalBillAllocation = (bill) => {
+export const totalBillUnitAllocation = (bill) => {
     return bill.allocation.participant.reduce((total, part)=>{
         return part.count + total
     },0)
