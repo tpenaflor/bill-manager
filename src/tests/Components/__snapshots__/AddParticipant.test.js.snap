@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render add participants 1`] = `
+<form
+  onSubmit={[Function]}
+>
+  <input
+    onChange={[Function]}
+    placeholder="Name"
+    value=""
+  />
+  <button>
+    Add Participant
+  </button>
+</form>
+`;
+
+exports[`render add participants 2`] = `
+<form
+  onSubmit={[Function]}
+>
+  <input
+    onChange={[Function]}
+    placeholder="Name"
+    value="participant name"
+  />
+  <button>
+    Add Participant
+  </button>
+</form>
+`;
+
+exports[`render add participants 3`] = `
+<form
+  onSubmit={[Function]}
+>
+  <input
+    onChange={[Function]}
+    placeholder="Name"
+    value=""
+  />
+  <button>
+    Add Participant
+  </button>
+</form>
+`;

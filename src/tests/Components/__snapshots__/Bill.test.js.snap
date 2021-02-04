@@ -1,0 +1,63 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`delete bill 1`] = `
+<div
+  className="entry"
+>
+  <div>
+    <button
+      onClick={[Function]}
+    >
+      x
+    </button>
+    beer
+     (0/10)
+     $1,000.00
+  </div>
+  <SplitAssignment
+    bill={
+      Object {
+        "allocation": Object {
+          "participant": Array [],
+          "unitCount": "10",
+        },
+        "amount": "1000",
+        "desc": "beer",
+        "id": "4efa1ac1-2d6f-49a5-834b-d4d5f0e7c97c",
+        "splitOpt": "unit",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`delete bill 2`] = `
+<div
+  className="entry"
+>
+  <div>
+    <button
+      onClick={[Function]}
+    >
+      x
+    </button>
+    beer
+     (0/10)
+     $1,000.00
+  </div>
+  <SplitAssignment
+    bill={
+      Object {
+        "allocation": Object {
+          "participant": Array [],
+          "unitCount": "10",
+        },
+        "amount": "1000",
+        "desc": "beer",
+        "id": "4efa1ac1-2d6f-49a5-834b-d4d5f0e7c97c",
+        "splitOpt": "unit",
+      }
+    }
+  />
+</div>
+`;

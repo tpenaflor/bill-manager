@@ -17,6 +17,7 @@ beforeEach( ()=> {
         .mockImplementation(() => contextValues)
 
     wrapper = shallow(<AddBill />)
+    expect(shallowToJson(wrapper)).toMatchSnapshot()
 })
 
 afterEach(()=>{

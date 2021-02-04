@@ -12,31 +12,28 @@ const BillAssignment = ({part, bill}) => {
     const setUnitAllocation = (e)=> {
         setUnitCount(e.target.value)
         
-        const participant = {
-            id : part.id,
-            count : parseInt(e.target.value)
-        }
-
         billDispatch({
             type : "SET_ALLOCATION",
-            participant,
+            participant : {
+                id : part.id,
+                count : parseInt(e.target.value)
+            },
             id : bill.id
         })
     }
 
     const handleCheckBox = () => {
         setActive(!isActive)
-        const participant = {
-            id : part.id,
-            count : 1
-        }
 
         const offset = !isActive ? 1 : -1
         const type = !isActive ? "ADD_PARTICIPANT_TO_BILL" : "DEL_PARTICIPANT_FROM_BILL"
 
         billDispatch({
             type,
-            participant,
+            participant:{
+                id : part.id,
+                count : 1
+            },
             unitCount : bill.allocation.participant.length + offset,
             id : bill.id
         })

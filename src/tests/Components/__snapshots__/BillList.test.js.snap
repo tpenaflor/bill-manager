@@ -1,0 +1,93 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render bill list 1`] = `
+Array [
+  <Bill
+    bill={
+      Object {
+        "allocation": Object {
+          "participant": Array [],
+          "unitCount": "10",
+        },
+        "amount": "1000",
+        "desc": "beer",
+        "id": "4efa1ac1-2d6f-49a5-834b-d4d5f0e7c97c",
+        "splitOpt": "unit",
+      }
+    }
+    className="billEntry"
+    key="4efa1ac1-2d6f-49a5-834b-d4d5f0e7c97c"
+  />,
+  <Bill
+    bill={
+      Object {
+        "allocation": Object {
+          "participant": Array [
+            Object {
+              "count": 3,
+              "id": "ac33c426-53c4-4d38-ba0f-f8e569a9a507",
+            },
+            Object {
+              "count": 1,
+              "id": "3712fdf0-5b62-41b6-9442-b35a41d5ec81",
+            },
+          ],
+          "unitCount": "5",
+        },
+        "amount": "1000",
+        "desc": "coke",
+        "id": "5190a7eb-78a8-4c08-bd2c-9afb1d239d83",
+        "splitOpt": "unit",
+      }
+    }
+    className="billEntry"
+    key="5190a7eb-78a8-4c08-bd2c-9afb1d239d83"
+  />,
+  <Bill
+    bill={
+      Object {
+        "allocation": Object {
+          "participant": Array [
+            Object {
+              "count": 1,
+              "id": "a4714460-a11c-4681-a21d-c7de2c57a02c",
+            },
+            Object {
+              "count": 1,
+              "id": "3712fdf0-5b62-41b6-9442-b35a41d5ec81",
+            },
+          ],
+          "unitCount": 2,
+        },
+        "amount": "400",
+        "desc": "water",
+        "id": "1fa52528-0aac-44ab-a92d-2bbd09c9bb75",
+        "splitOpt": "even",
+      }
+    }
+    className="billEntry"
+    key="1fa52528-0aac-44ab-a92d-2bbd09c9bb75"
+  />,
+  <Bill
+    bill={
+      Object {
+        "allocation": Object {
+          "participant": Array [
+            Object {
+              "count": 1,
+              "id": "ac33c426-53c4-4d38-ba0f-f8e569a9a507",
+            },
+          ],
+          "unitCount": 1,
+        },
+        "amount": "1500",
+        "desc": "electricity",
+        "id": "10930ccf-0720-445f-95d2-e8945a0233ad",
+        "splitOpt": "even",
+      }
+    }
+    className="billEntry"
+    key="10930ccf-0720-445f-95d2-e8945a0233ad"
+  />,
+]
+`;

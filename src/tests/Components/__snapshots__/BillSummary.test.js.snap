@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`show bill summary 1`] = `
+<div
+  className="entry"
+>
+  <div>
+     
+  </div>
+  <div
+    key="a4714460-a11c-4681-a21d-c7de2c57a02c"
+  >
+    <p>
+      user1 total bill $200.00
+    </p>
+  </div>
+  <div
+    key="ac33c426-53c4-4d38-ba0f-f8e569a9a507"
+  >
+    <p>
+      user2 total bill $2,100.00
+    </p>
+  </div>
+  <div
+    key="3712fdf0-5b62-41b6-9442-b35a41d5ec81"
+  >
+    <p>
+      user3 total bill $400.00
+    </p>
+  </div>
+  <div
+    key="6be42a94-61eb-47d4-8552-0369487f015c"
+  >
+    <p>
+      user4 total bill $0.00
+    </p>
+  </div>
+</div>
+`;

@@ -1,0 +1,190 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`set bill allocation to participant 1`] = `
+<div>
+  <select
+    id="unitCount"
+    onChange={[Function]}
+  >
+    <option
+      key="0"
+    >
+      0
+    </option>
+    <option
+      key="1"
+    >
+      1
+    </option>
+    <option
+      key="2"
+    >
+      2
+    </option>
+    <option
+      key="3"
+    >
+      3
+    </option>
+    <option
+      key="4"
+    >
+      4
+    </option>
+    <option
+      key="5"
+    >
+      5
+    </option>
+    <option
+      key="6"
+    >
+      6
+    </option>
+    <option
+      key="7"
+    >
+      7
+    </option>
+    <option
+      key="8"
+    >
+      8
+    </option>
+    <option
+      key="9"
+    >
+      9
+    </option>
+    <option
+      key="10"
+    >
+      10
+    </option>
+  </select>
+  <p>
+    user1 beer $0.00
+  </p>
+</div>
+`;
+
+exports[`set bill allocation to participant 2`] = `
+<div>
+  <select
+    id="unitCount"
+    onChange={[Function]}
+    value={3}
+  >
+    <option
+      key="0"
+    >
+      0
+    </option>
+    <option
+      key="1"
+    >
+      1
+    </option>
+    <option
+      key="2"
+    >
+      2
+    </option>
+    <option
+      key="3"
+    >
+      3
+    </option>
+    <option
+      key="4"
+    >
+      4
+    </option>
+    <option
+      key="5"
+    >
+      5
+    </option>
+    <option
+      key="6"
+    >
+      6
+    </option>
+    <option
+      key="7"
+    >
+      7
+    </option>
+    <option
+      key="8"
+    >
+      8
+    </option>
+    <option
+      key="9"
+    >
+      9
+    </option>
+    <option
+      key="10"
+    >
+      10
+    </option>
+  </select>
+  <p>
+    user1 beer $0.00
+  </p>
+</div>
+`;
+
+exports[`tick participant checkbox 1`] = `
+<div>
+  <input
+    checked={false}
+    onChange={[Function]}
+    type="checkbox"
+  />
+  <p>
+    user2 water $0.00
+  </p>
+</div>
+`;
+
+exports[`tick participant checkbox 2`] = `
+<div>
+  <input
+    checked={true}
+    onChange={[Function]}
+    type="checkbox"
+  />
+  <p>
+    user2 water $0.00
+  </p>
+</div>
+`;
+
+exports[`untick participant checkbox 1`] = `
+<div>
+  <input
+    checked={true}
+    onChange={[Function]}
+    type="checkbox"
+  />
+  <p>
+    user1 water $200.00
+  </p>
+</div>
+`;
+
+exports[`untick participant checkbox 2`] = `
+<div>
+  <input
+    checked={false}
+    onChange={[Function]}
+    type="checkbox"
+  />
+  <p>
+    user1 water $200.00
+  </p>
+</div>
+`;

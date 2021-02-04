@@ -5,11 +5,12 @@ const Participants = () => {
 
   const {bills, participants, partDispatch, billDispatch} = useBillsManagerContext()
   const remParticipant = (id) => {
-    partDispatch({type:"DEL_PARTICIPANT",id})
+    partDispatch({
+      type:"DEL_PARTICIPANT",
+      id
+    })
     
     bills.forEach((bill)=> {
-      const type = "DEL_PARTICIPANT_FROM_BILL"
-
       let unitCount
       if (bill.splitOpt === 'even') {
         unitCount = bill.allocation.participant.length - 1
@@ -20,7 +21,7 @@ const Participants = () => {
 
       billDispatch(
         {
-          type,
+          type : "DEL_PARTICIPANT_FROM_BILL",
           id : bill.id,
           participant : {
             id

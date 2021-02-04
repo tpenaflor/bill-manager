@@ -10,6 +10,45 @@ exports[`render add bill by unit 1`] = `
   <select
     id="splitOption"
     onChange={[Function]}
+    value="even"
+  >
+    <option
+      value="even"
+    >
+      Split Evenly
+    </option>
+    <option
+      value="unit"
+    >
+      Split per Unit
+    </option>
+  </select>
+  <input
+    onChange={[Function]}
+    placeholder="Bill Description"
+    value=""
+  />
+  <input
+    onChange={[Function]}
+    placeholder="Amount"
+    value=""
+  />
+  <button>
+    Add Bill
+  </button>
+</form>
+`;
+
+exports[`render add bill by unit 2`] = `
+<form
+  onSubmit={[Function]}
+>
+  <label>
+    Split Option
+  </label>
+  <select
+    id="splitOption"
+    onChange={[Function]}
     value="unit"
   >
     <option
@@ -44,7 +83,7 @@ exports[`render add bill by unit 1`] = `
 </form>
 `;
 
-exports[`render add bill by unit 2`] = `
+exports[`render add bill by unit 3`] = `
 <form
   onSubmit={[Function]}
 >
@@ -128,6 +167,45 @@ exports[`render add bill evenly 1`] = `
 `;
 
 exports[`render add bill evenly 2`] = `
+<form
+  onSubmit={[Function]}
+>
+  <label>
+    Split Option
+  </label>
+  <select
+    id="splitOption"
+    onChange={[Function]}
+    value="even"
+  >
+    <option
+      value="even"
+    >
+      Split Evenly
+    </option>
+    <option
+      value="unit"
+    >
+      Split per Unit
+    </option>
+  </select>
+  <input
+    onChange={[Function]}
+    placeholder="Bill Description"
+    value=""
+  />
+  <input
+    onChange={[Function]}
+    placeholder="Amount"
+    value=""
+  />
+  <button>
+    Add Bill
+  </button>
+</form>
+`;
+
+exports[`render add bill evenly 3`] = `
 <form
   onSubmit={[Function]}
 >

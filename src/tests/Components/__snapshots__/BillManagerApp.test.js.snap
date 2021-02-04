@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render bill list 1`] = `
+<ContextProvider
+  value={
+    Object {
+      "billDispatch": [Function],
+      "bills": Array [],
+      "partDispatch": [Function],
+      "participants": Array [],
+    }
+  }
+>
+  <h1>
+    Bill Manager
+  </h1>
+  <AddBill />
+  <AddParticipant />
+  <Participants />
+  <BillList />
+  <BillSummary />
+</ContextProvider>
+`;
