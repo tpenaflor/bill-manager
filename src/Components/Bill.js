@@ -12,13 +12,13 @@ const Bill = ({bill}) => {
     }
 
     return (
-        <div>
-            <button onClick={()=>removeBill(bill.id)}>x</button>
+        <div className="entry">
             <div>
+                <button onClick={()=>removeBill(bill.id)}>x</button>
                 {bill.desc} 
-                {bill.splitOpt === 'unit' && ` ${totalBillAllocation(bill)}/${bill.allocation.unitCount}`}
+                {bill.splitOpt === 'unit' && ` (${totalBillAllocation(bill)}/${bill.allocation.unitCount})`}
+                {` ${bill.amount}`}
             </div>
-            <div>{bill.amount}</div>
             <SplitAssignment bill={bill}/>
         </div> 
     )

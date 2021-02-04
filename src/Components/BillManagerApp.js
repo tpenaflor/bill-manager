@@ -28,13 +28,13 @@ const BillManagerApp = () => {
   },[])
 
   useEffect(() =>{
+    console.log(bills)
       localStorage.setItem('bills', JSON.stringify(bills))
     },[bills])
 
   useEffect(() =>{
     localStorage.setItem('participants', JSON.stringify(participants))
   },[participants])
-
 
   return (
     <BillsManagerContext.Provider value={{bills, participants, billDispatch, partDispatch}}>

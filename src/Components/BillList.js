@@ -6,8 +6,7 @@ const BillList = () => {
     const {bills} = useBillsManagerContext()
     return bills.map((bill) => <Bill 
         className="billEntry" 
-        key={bill.id} bill={bill}/> 
-        )
+        key={bill.id} bill={bill}/>) 
 }
 
 export default BillList

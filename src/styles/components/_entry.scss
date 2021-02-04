@@ -4,4 +4,9 @@
     justify-content: space-between;
     align-items: center;
     padding: $sSize 0;
+    background: fade-out(white, .15);
+    border-radius: 3px;
+    padding: $lSize $mSize;
+    text-align: center;
+    border-bottom: 1px solid lighten($brightGreen, 10%);
 }
