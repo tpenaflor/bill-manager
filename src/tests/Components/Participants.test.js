@@ -5,7 +5,7 @@ import { shallowToJson } from 'enzyme-to-json';
 import Participants from '../../Components/Participants'
 import * as BillsManagerContext from '../../Context/BillsManagerContext'
 import { billFixture} from '../Fixtures/BillFixture'
-import {participantFixture} from '../Fixtures/participantFixture'
+import {participantFixture} from '../Fixtures/ParticipantFixture'
 
 let wrapper, partDispatch, billDispatch
 
