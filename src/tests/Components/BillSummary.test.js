@@ -5,7 +5,7 @@ import { shallowToJson  } from 'enzyme-to-json';
 import BillSummary from '../../Components/BillSummary'
 import * as BillsManagerContext from '../../Context/BillsManagerContext'
 import {billFixture} from '../Fixtures/BillFixture'
-import {participantFixture} from '../Fixtures/participantFixture'
+import {participantFixture} from '../Fixtures/ParticipantFixture'
 
 test('show bill summary', ()=> {
     const contextValues = {
