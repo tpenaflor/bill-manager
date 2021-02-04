@@ -1,3 +1,4 @@
+import {currency} from '../tools/formatter'
 
 export const participantBill = (partId, billId, bills) => {
     const bill = bills.find(({id})=>id===billId)
@@ -12,9 +13,9 @@ export const participantBill = (partId, billId, bills) => {
 }
 
 export const participantBillSummary = (partId, bills) => {
-    return bills.reduce((total, bill)=>{
+    return currency(bills.reduce((total, bill)=>{
         return participantBill(partId, bill.id, bills) + total
-    },0)
+    },0))
 }
 
 export const totalBillAllocation = (bill) => {

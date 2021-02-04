@@ -10,6 +10,14 @@ const Participants = () => {
     bills.forEach((bill)=> {
       const type = "DEL_PARTICIPANT_FROM_BILL"
 
+      let unitCount
+      if (bill.splitOpt === 'even') {
+        unitCount = bill.allocation.participant.length - 1
+      }
+      else {
+        unitCount = bill.allocation.unitCount
+      }
+
       billDispatch(
         {
           type,
@@ -17,7 +25,7 @@ const Participants = () => {
           participant : {
             id
           },
-          unitCount : bill.allocation.participant.length - 1,
+          unitCount
         }
       )
     })
