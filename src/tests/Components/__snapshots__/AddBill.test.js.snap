@@ -114,7 +114,7 @@ exports[`render add bill by unit 3`] = `
   <input
     onChange={[Function]}
     placeholder="Number of Units"
-    value="10"
+    value=""
   />
   <input
     onChange={[Function]}

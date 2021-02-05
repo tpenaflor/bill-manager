@@ -41,6 +41,7 @@ const AddBill = () => {
 
           setDesc('')
           setAmount('')
+          setUnitCount('')
         }
       }
 
