@@ -1,3 +1,15 @@
+# What is this APP for?
+
+This APP aims to provide a lightweight/easy to use platform that helps splitting bills with your friends whenver you go out.
+
+Features:
+- Split a bill evenly among relevant participants by ticking/unticking their share.
+- Split a bill per unit consumed. Perfect for per bottle/unit consumption. Split bill based on how much a participant consumed.
+
+TODO:
+- Overall design (CSS)... functionality is pretty much done.
+- Deploy to heroku
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
