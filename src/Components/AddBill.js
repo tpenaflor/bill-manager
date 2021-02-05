@@ -24,7 +24,10 @@ const AddBill = () => {
     const addBill = (e) => {
         e.preventDefault()
         
-        if (amount && desc) {
+
+        if (amount && desc && 
+            ((splitOpt === 'unit') ? unitCount : true)) {
+
           const id = v4()
           billDispatch({
             type:"ADD_BILL", 
