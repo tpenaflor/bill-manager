@@ -12,7 +12,7 @@ exports[`delete bill 1`] = `
     </button>
     beer
      (0/10)
-     $1,000.00
+     PHP 1,000.00
   </div>
   <SplitAssignment
     bill={
@@ -43,7 +43,7 @@ exports[`delete bill 2`] = `
     </button>
     beer
      (0/10)
-     $1,000.00
+     PHP 1,000.00
   </div>
   <SplitAssignment
     bill={

@@ -77,5 +77,49 @@ test('render add bill by unit', ()=> {
           amount,
           splitOpt : 'unit'
         }})
+})
 
+test('render add bill by unit - missing desc', ()=> {
+  wrapper.find('select').simulate('change', {target:{value: 'unit'}})
+  expect(shallowToJson(wrapper)).toMatchSnapshot()
+
+  const amount = "1000"
+  const unitCount = "10"
+
+  wrapper.find('input').at(1).simulate('change', {target:{value: unitCount}})
+  wrapper.find('input').at(2).simulate('change', {target:{value: amount}})
+
+  wrapper.find('form').simulate('submit', {preventDefault:()=>{}})
+
+  expect(billDispatch).not.toHaveBeenCalled()
+})
+
+test('render add bill by unit - missing unit count', ()=> {
+    wrapper.find('select').simulate('change', {target:{value: 'unit'}})
+    expect(shallowToJson(wrapper)).toMatchSnapshot()
+
+    const desc = "test description"
+    const amount = "1000"
+
+    wrapper.find('input').at(0).simulate('change', {target:{value: desc}})
+    wrapper.find('input').at(2).simulate('change', {target:{value: amount}})
+
+    wrapper.find('form').simulate('submit', {preventDefault:()=>{}})
+
+    expect(billDispatch).not.toHaveBeenCalled()
+})
+
+test('render add bill by unit - missing amount', ()=> {
+    wrapper.find('select').simulate('change', {target:{value: 'unit'}})
+    expect(shallowToJson(wrapper)).toMatchSnapshot()
+
+    const desc = "test description"
+    const unitCount = "10"
+
+    wrapper.find('input').at(0).simulate('change', {target:{value: desc}})
+    wrapper.find('input').at(1).simulate('change', {target:{value: unitCount}})
+
+    wrapper.find('form').simulate('submit', {preventDefault:()=>{}})
+
+    expect(billDispatch).not.toHaveBeenCalled()
 })
