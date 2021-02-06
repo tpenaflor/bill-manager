@@ -33,7 +33,7 @@ const AddBill = () => {
             type:"ADD_BILL", 
             bill: {
               id,
-              desc,
+              desc : desc.trim(),
               allocation : {
                 participant : [],
                 unitCount
@@ -61,7 +61,7 @@ const AddBill = () => {
       </select>
 
       <input value ={desc} 
-        onChange={(e)=>setDesc(e.target.value.trim())}
+        onChange={(e)=>setDesc(e.target.value)}
         placeholder='Bill Description'  />
       {splitOpt === 'unit' && <input value ={unitCount} 
         onChange={updateUnitCount}
